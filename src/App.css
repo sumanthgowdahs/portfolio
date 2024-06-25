@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  ---backGroundColor1: black;
+  ---backGroundColor2: white;
+  ---color1: white;
+  ---color2: black;
+  ---fontStyle1: "Reddit Mono", monospace;
+  ---fontStyle2: "Bebas Neue";
+  ---fontCursive: cursive;
+  --paragraphColor: #717171;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid pink; */
+  /* background-color: tomato; */
+}
+
+.app {
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.app .cursorDiv{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: sticky ;
+  top: 0%; 
+  z-index: 1;
+}
+.app .cursorDiv2{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  position: sticky ;
+  top: 0%;
+  
+}
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+  gap: 30px;
+  position: sticky;
+  top: 0px;
+  z-index: 111;
+  /* background: transparent; */
+}
+
+nav .links {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: var(---fontStyle1);
+}
+
+nav .links:hover {
+  transform: scale(1.2);
+  /* color: red; */
+
+}
+
+.app {
+  height: auto;
+}
+
+/* & theme button toggle */
+nav .buttonLight {
+  width: 65px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  border-radius: 5px;
+  font-size: 24px;
+
+}
+
+nav .buttonDark {
+  width: 65px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+
+/* & Home */
+.home {
+  background-color: var(---backGroundColor1);
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .home .welcomeDiv {
+  display: flex;
+
+}
+.home .welcomeDiv .welcome  {
+  font-size: 17vw;
+} */
+/* .home .introParagraph{
+
+} */
+.introSection {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introSection .introNames .myName {
+  font-size: 8vw;
+  font-family: var(---fontStyle2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.introSection .introNames span {
+  display: flex;
+}
+
+.introSection .introNames span h1 {
+
+  height: 9vw;
+}
+
+.introNames {
+  display: flex;
+  gap: 10px;
+}
+
+.main-content h2 {
+  font-size: 7vw;
+
+}
+
+.home .introParagraph {
+  color: #717171;
+  font-size: 1.5vw;
+  font-family: var(---fontStyle1);
+}
+
+/* .home .introParagraph span{
+
+} */
+
+.buttonDiv {
+
+  width: 100vw;
+  height: 20vh;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: red; */
+}
+
+.buttonDiv button {
+  width: 40px;
+  height: 41px;
+  border-radius: 50%;
+  border: none;
+  font-size: 38px;
+  align-content: center;
+}
+
+
+
+
+
+/* & about */
+.about {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.about .aboutBox {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bdb9b985;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.about .aboutBox .box1 {
+  width: 40%;
+  /* height: 80%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+}
+
+.about .aboutBox .box1 img {
+  width: 80%;
+  /* height: 20%; */
+  border-radius: 20px;
+
+}
+
+.about .aboutBox .box2 {
+  width: 50%;
+  /* height: 80%; */
+  padding: 30px;
+}
+
+.aboutHeadingName h1 {
+
+  font-family: var(---fontStyle2);
+  letter-spacing: 4px;
+}
+
+.aboutHeadingName {
+  display: flex;
+  gap: 10px;
+  margin: 40px;
+}
+
+.about .aboutBox .box2 p {
+  color: #717171;
+  font-family: var(---fontStyle1);
+}
+
+.about .buttonDiv {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+ 
+}
+
+
+
+
+
+
+
+
+/* & skills */
+.Skills {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Skills .skillHeading{
+  display: flex;
+  font-family: var(---fontStyle2);
+  letter-spacing: 10px;
+}
+.Skills .buttonDiv{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  top: 50%;
+}
+
+.skillsAll {
+  width: 90%;
+  display: flex;
+  max-height: 100vh;
+  overflow-y: scroll;
+  border-radius: 9px;
+  border: 1px solid #bdb9b985;
+  padding: 40px;
+}
+
+.skillsAll .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 50%;
+}
+
+.skillsAll .box1 .skillDes {
+  font-family: var(---fontStyle1);
+  color:#717171 ;
+
+}
+
+.skillsAll .box2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillsAll .box2 img {
+  width: 150px;
+  height: 150px;
+}
+
+/* ^------------------------------------------------- */
+
+.skillsDetails {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.skillsDetails .skillBox {
+  max-height: 80vh;
+  width: 90%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bdb9b985;
+border-radius: 9px;
+}
+.skillsDetails .skillBox .box1{
+  padding: 50px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skillsDetails .skillBox .box1 h3{
+  font-family: var(---fontStyle1);
+  color: #717171;
+}
+.skillsDetails .skillBox .box2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skillsDetails .skillBox .box2 img{
+  width: 200px;
+  height: 200px;
+}
+
+
+/* & projects */
+
+.projects{
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 50px; */
+}
+
+.projects .projectsList{
+  width: 100vw;
+  height: 800vh;
+  /* background-color: red; */
+}
+.projects .projectsList .projectName{
+  width: 90%;
+  /* background-color: green; */
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  border-bottom: 2px solid #cccccc72;
+  /* border: 2px solid #cccccc72; */
+  transition: 1s;
+  font-size: 40px;
+  color: var(--paragraphColor);
+  position: relative;
+}
+.projects .projectsList .projectName:hover{
+  .ProjectImageDiv{
+    display: inline-block;
+    
+    opacity: 1;
+  }
+  
+  padding-left:60px ;
+}
+.projects .projectsList .projectName .ProjectImageDiv{
+  width: 350px;
+  height: 250px;
+  /* background-color: red; */
+  /* background-image: url(https://cdn.pixabay.com/photo/2022/01/07/01/22/girl-6920630_1280.jpg); */
+  background-size: cover;
+  position: absolute;
+  right : -20px;
+  display: none;
+  opacity: 0;
+  transition: 2s;
+  border: 1px solid #bdb9b985;
+  border-radius: 20px;
+  
+}
+.projects .projectsList .projectName .ProjectImageDiv img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+
+
+
+
